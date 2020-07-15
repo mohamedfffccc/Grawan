@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/_4sdp"
+    android:background="@drawable/list_item_selector"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/_15sdp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/araby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:textColor="@color/black"
+        android:id="@+id/address_item_tv_name"
+        android:layout_margin="@dimen/_1sdp"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/_12sdp"
+
+
+        android:fontFamily="@font/araby"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textColor="@color/grey"
+        android:id="@+id/address_item_tv_address"
+        android:layout_below="@id/address_item_tv_name"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkblue"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_below="@id/address_item_tv_address"/>
+
+</RelativeLayout>

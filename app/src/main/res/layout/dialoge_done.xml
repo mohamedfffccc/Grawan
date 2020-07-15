@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/dialoge_shape"    >
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/done"
+        android:id="@+id/dialoge_iv_done"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_below="@id/dialoge_iv_done"
+        android:id="@+id/dialoge_tv_done"
+        android:fontFamily="@font/araby"
+        android:textSize="@dimen/_20sdp"
+        android:text="kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_below="@id/dialoge_tv_done"
+        android:textColor="@color/white"
+        android:fontFamily="@font/araby"
+        android:text="@string/ok"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/dialoge_btn_done"/>
+
+
+</RelativeLayout>

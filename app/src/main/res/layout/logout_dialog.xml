@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dialoge_shape"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/are_you_sure_you_want_to_log_out"
+        android:fontFamily="@font/araby"
+
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/logout_dialog_tv_message"/>
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/logout_dialog_tv_message"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/done"
+        android:id="@+id/logout_dialog_btn_yes"/>
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/logout_dialog_tv_message"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:id="@+id/logout_dialog_btn_no"/>
+
+</RelativeLayout>

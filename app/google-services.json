@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "524264260677",
+    "firebase_url": "https://garwan-2a974.firebaseio.com",
+    "project_id": "garwan-2a974",
+    "storage_bucket": "garwan-2a974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524264260677:android:d9bc6f26201be323c40f2c",
+        "android_client_info": {
+          "package_name": "com.openshop.gazapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524264260677-htotusge3pm1gl3pqrpi14mp0ctt0bo1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.openshop.gazapp",
+            "certificate_hash": "516bd7d74c82a3762a2aeb39999c69f2c62ce289"
+          }
+        },
+        {
+          "client_id": "524264260677-4hvkdlk1dpacpminq720f6gjieua26el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWDBTA6XCRjvrFU3pkXPOjPS460ZBajLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524264260677-4hvkdlk1dpacpminq720f6gjieua26el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

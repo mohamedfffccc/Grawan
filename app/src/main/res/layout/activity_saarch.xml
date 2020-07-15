@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.home.SaarchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/back_1"
+        android:id="@+id/activity_search_rel_title"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/activity_search_ed_keyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="@string/search_for"
+                    />
+                <ImageView
+                    android:id="@+id/activity_search_btn_search"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_search_black_24dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/activity_search_btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/araby"
+                android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/araby"
+        android:text="@string/last_search"
+        android:layout_below="@id/activity_search_rel_title"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/activity_search_tv_last_search"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_search_tv_last_search"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/activity_search_lv_last_keywords"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_search_tv_last_search"
+        android:layout_margin="@dimen/_5sdp"
+        android:visibility="gone"
+        android:id="@+id/activity_search_rv_results"/>
+
+</RelativeLayout>

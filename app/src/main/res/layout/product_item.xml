@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="@dimen/_130sdp"
+android:layout_height="@dimen/_180sdp"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_margin="@dimen/_5sdp"
+android:orientation="vertical"
+android:elevation="@dimen/_5sdp"
+android:background="@color/white"
+app:cardCornerRadius="@dimen/_5sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:cropToPadding="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gas_tube"
+            android:id="@+id/product_iv_image"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:textSize="@dimen/_15sdp"
+            android:text="gaz"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_below="@id/product_iv_image"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/product_tv_name"
+            android:fontFamily="@font/araby"/>
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:textSize="@dimen/_15sdp"
+            android:text="1"
+            android:layout_below="@id/product_tv_name"
+            android:textColor="@color/darkblue"
+            android:id="@+id/product_tv_price"
+            android:fontFamily="@font/araby"/>
+        <Button
+            android:id="@+id/product_add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:fontFamily="@font/araby"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_3sdp"
+            android:textSize="@dimen/_15sdp"
+            android:layout_below="@id/product_tv_price"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/darkblue"
+            android:text="@string/add_to_cart"
+            android:drawableEnd="@drawable/shopping_cart"/>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

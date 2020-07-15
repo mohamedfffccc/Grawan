@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.auth.AuthActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/back_1"
+        android:id="@+id/activity_auth_welcome">
+        <com.google.android.material.tabs.TabLayout
+            android:background="@drawable/back_1"
+
+
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="@dimen/_150sdp"
+            app:tabIndicator="@color/white"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/activity_auth_tab_authentication"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextAppearance="@style/tabstyle"
+            app:tabIndicatorHeight="@dimen/_1sdp"
+
+            app:tabIndicatorFullWidth="false"
+
+
+
+            android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabItem
+
+
+
+
+                 android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                    android:id="@+id/activity_auth_tab_auth_logina"
+
+                android:text="@string/login"
+                android:textColor="@color/white"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:id="@+id/activity_auth_tab_auth_register"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@color/white"/>
+
+
+        </com.google.android.material.tabs.TabLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:src="@drawable/back_1_utils"
+
+            android:id="@+id/activity_auth_iv_logo"/>
+        <TextView
+            android:fontFamily="@font/araby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/activity_auth_iv_logo"
+            android:text="@string/welcome_to_grawan_gas_delivering_app"
+            android:id="@+id/activity_auth_tv_welcome"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_auth_welcome"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/auth_container">
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

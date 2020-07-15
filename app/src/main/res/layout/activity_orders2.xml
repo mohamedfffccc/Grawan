@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/back_1"
+        android:id="@+id/activity_orders_rel_title"
+        >
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:id="@+id/activity_orders_btn_back"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/activity_orders_tv_title"
+            android:fontFamily="@font/araby"
+            android:textSize="@dimen/_20sdp"
+            android:text="@string/my_orders"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:background="@drawable/back_1"
+            android:layout_below="@id/activity_orders_tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            app:tabIndicator="@color/white"
+            android:id="@+id/activity_orders_tab_layout_orders"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextAppearance="@style/tabstyle"
+            app:tabIndicatorHeight="@dimen/_1sdp"
+            app:tabIndicatorFullWidth="false"
+
+
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabItem
+
+
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_orders_tab_current"
+
+                android:text="@string/current_orders"
+                android:textColor="@color/white"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:id="@+id/activity_orders_tab_last"
+                android:layout_height="wrap_content"
+                android:text="@string/last_orders"
+                android:textColor="@color/white"/>
+
+
+        </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_below="@id/activity_orders_rel_title"
+        android:id="@+id/orders_container"/>
+</RelativeLayout>

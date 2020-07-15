@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.home.CartActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/back_1"
+        android:id="@+id/activity_cart_rel_title"
+        >
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:id="@+id/activity_cart_btn_back"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+
+            android:fontFamily="@font/araby"
+            android:textSize="@dimen/_20sdp"
+            android:text="@string/cart"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_cart_rel_title"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="-150dp"
+        android:background="@color/white">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+
+            android:id="@+id/activity_cart_rv_items"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_cart_tv_order_total"
+                android:textColor="@color/black"
+                android:text="@string/total"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/araby"
+                android:textSize="@dimen/_20sdp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/activity_cart_lin_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_cart_tv_order_total"
+                android:layout_alignParentStart="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/araby"
+                    android:text="@string/order_price"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/araby"
+                    android:text="@string/delivery_cost"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/araby"
+                    android:text="@string/total"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_cart_lin_total"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_cart_tv_order_total"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/araby"
+                    android:id="@+id/activity_cart_tv_order_price"
+                    android:text="@string/order_price"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:id="@+id/activity_cart_tv_delivery_cost"
+                    android:fontFamily="@font/araby"
+                    android:text="@string/delivery_cost"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/araby"
+                    android:id="@+id/activity_cart_tv_total"
+                    android:text="@string/order_price"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/activity_cart_lin_total"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/confirm_order"
+                android:textColor="@color/white"
+                android:fontFamily="@font/araby"
+                android:id="@+id/activity_cart_btn_confirm"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

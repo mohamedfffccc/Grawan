@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">الجروان</string>
+    <string name="welcome_to_grawan_gas_delivering_app">مرحبا بك في تطبيق الجروان لتوزيع الغاز</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_password">نسيت كلمة المرور ؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">حساب جديد</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mobile_phone">رقم الجوال</string>
+    <string name="home_phone">رقم المنزل</string>
+    <string name="confirm_password">تاكيد كلمة المرور</string>
+    <string name="next">متابعة</string>
+    <string name="agree_on_terms_of_service">اوافق علي الشروط و الاحكام</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="send">ارسال</string>
+    <string name="enter_email">الرجاء ادخال البريد الالكتروني لاستعادة كلمة المرور</string>
+    <string name="code_was_sentto_your_email_to_reset_your_password">تم ارسال كود تفعيل خاص بك  علي بريدك الالكتروني لاستعادة كلمة المرور الخاصة بك</string>
+<string name="confirm">تاكيد</string>
+<string name="code_not_sent">لم يصلك كود التفعيل ؟</string>
+    <string name="enter_code">الرجاء ادخال كود التفعيل المرسل علي بريدك الالكتروني</string>
+    <string name="resend">ارسل مرة اخري</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+<string name="enter_new"> الرجاء ادخال كلمة المرور الجديدة</string>
+<string name="confirm_newpassword"> تاكيد كلمة المرور الجديدة</string>
+    <string name="activate">تفعيل</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="welcome">مرحبا</string>
+    <string name="home">الرئيـسية</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="title_activity_profile">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="welcome_p">مرحبا بك...</string>
+    <string name="name">الاسم</string>
+    <string name="save_changes">حفظ التعديلات</string>
+    <string name="mu_orders">طلباتي</string>
+    <string name="cart">سلة المشتريات</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="about">من نحن</string>
+    <string name="rules">الشروط و الاحكام</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="share">مشاركة التطبيق</string>
+    <string name="product_details">تفاصيل المنتج</string>
+    <string name="add_to_cart">اضف الي العربة</string>
+    <string name="download_the_app">قم بتحميل التطبيق</string>
+    <string name="text_is_written_here">هنا يكتب النص...</string>
+    <string name="your_order_sent">تم ارسال طلبك</string>
+    <string name="successfully">بنجاح و سيتم اعلامك فور قبول مزود الخدمة</string>
+    <string name="ok">حسنا</string>
+    <string name="save_address">حفظ العنوان</string>
+    <string name="add_new_address">اضافة عنوان جديد</string>
+    <string name="wait">برجاء الانتظار ...</string>
+    <string name="added_to_cart">تمت الاضافة للسلة</string>
+    <string name="email_or_phone">البريد الالكتروني او رقم التليفون</string>
+    <string name="total">اجمالي الطلب</string>
+    <string name="order_price">سعر الطلب</string>
+    <string name="delivery_cost">تكلفة التوصيل</string>
+    <string name="confirm_order">اتمام الطلب</string>
+    <string name="delivery_address">عنوان التوصيل</string>
+    <string name="confirmin_order">تاكيد الطلب</string>
+    <string name="add_nrw_address">اضف عنوان</string>
+    <string name="payment">الدفع</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="cancel">الغاء</string>
+    <string name="order_nunber">رقم الطلب</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="current_orders">طلبات حالية</string>
+    <string name="last_orders">طلبات سابقة</string>
+    <string name="order_has_been_accepted">تم الموافقة علي الطلب</string>
+    <string name="order_has_been_tracked">الطلب في الطريق</string>
+    <string name="order_has_been_delivered">تم استلام الطلب</string>
+    <string name="search_for">ابحث عن  منتج ...</string>
+    <string name="are_you_sure_you_want_to_log_out">are you sure you want to log out ?</string>
+    <string name="last_search">عمليات البحث الاخيرة</string>
+    <string name="are_you_sure_yo_want_delete_this_order">هل تريد بالتاكيد حذف الطلب ؟</string>
+    <string name="change">تغيير</string>
+    <string name="change_password">تغيير كلمة المرور </string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="address">العنوان</string>
+    <string name="no_data_in_the_shopping_cart">لا يوجد منتجات في العربة </string>
+    <string name="add">اضافة</string>
+    <string name="agree_terms">برجاء الموافقة علي الشروط</string>
+    <string name="expiry_date">تاريخ انتهاء الصلاحية</string>
+    <string name="cvv">الرمز السري</string>
+    <string name="please_enter_email">من فضلك ادخل البريد الالكتروني او الجوال</string>
+    <string name="pass_error">كلمة المرور لا يجب ان تكون اقل من 6 ارقام</string>
+    <string name="username_required">الاسم مطلوب</string>
+    <string name="phone_required">الجوال مطلوب</string>
+    <string name="home_required">جوال المنزل مطلوب</string>
+    <string name="address_required">  العنوان مطلوب</string>
+    <string name="email_required">البريد الالكتروني مطلوب</string>
+    <string name="please_enter_password">برجاء ادخال كلمة المرور</string>
+    <string name="confirm_error"> تاكيد كلمة المرور لا يتطابق</string>
+    <string name="not_accepted_yet">تاريخ الموافقة</string>
+    <string name="not_tracked_yet">تاريخ التعقب</string>
+    <string name="not_delivered_yet">تاريخ التسليم</string>
+    <string name="code_expired">انتهت صلاحية الكود من فضلك اعد الارسال مرة اخري</string>
+    <string name="enter_valid_email">برجاء ادخال بريد الكتروني صحيح</string>
+    <string name="edit">تعديل</string>
+    <string name="edit_profile">تعديل الملف السخصي</string>
+    <string name="reyal">ريال</string>
+    <string name="order_rejected">تم رفض الطلب</string>
+    <string name="accepted">order accepted</string>
+    <string name="pending">waiting for acceptance</string>
+    <string name="no_products">no enough products</string>
+    <string name="rate">قيم التطبيق</string>
+
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dialoge_shape"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/are_you_sure_yo_want_delete_this_order"
+        android:fontFamily="@font/araby"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_3sdp"
+        android:id="@+id/dalete_dialog_tv_message"/>
+    <TextView
+        android:textColor="@color/black"
+        android:fontFamily="@font/araby"
+        android:text="@string/confirm"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dalete_dialog_tv_message"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/delete_dialog_btn_yes"/>
+    <TextView
+        android:layout_margin="@dimen/_15sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/light_grey"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/cancel"
+        android:fontFamily="@font/araby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dalete_dialog_tv_message"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/delete_dialog_btn_no"/>
+
+</RelativeLayout>

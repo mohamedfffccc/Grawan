@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.home.AddressActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/back_1"
+        android:id="@+id/activity_address_rel_title"
+        >
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:id="@+id/activity_address_btn_back"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+
+            android:fontFamily="@font/araby"
+            android:textSize="@dimen/_20sdp"
+            android:text="@string/delivery_address"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_address_rel_title"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@color/white">
+        <ListView
+            android:choiceMode="singleChoice"
+            android:listSelector="@drawable/list_item_selector"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:id="@+id/activity_address_lv_addresses"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/_20sdp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:id="@+id/activity_address_btn_confirm_order"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/confirmin_order"
+                android:background="@color/darkblue"/>
+            <Button
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:id="@+id/activity_address_btn_add_new_address"
+
+                android:layout_height="match_parent"
+                android:text="@string/add_nrw_address"
+                android:background="@color/darkblue"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

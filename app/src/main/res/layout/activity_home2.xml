@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_container"
+    android:background="@color/white"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/activity_home_rel_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250sdp"
+                    android:background="@drawable/back_1"
+                    >
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:id="@+id/activity_home_iv_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_iconfinder_menu_alt_134216"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/activity_home_tv_title"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"
+                            android:fontFamily="@font/araby"
+                            android:text="@string/home"
+                            android:layout_centerHorizontal="true"/>
+                        <androidx.viewpager.widget.ViewPager
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_below="@id/activity_home_tv_title"
+                            android:id="@+id/activity_home_vp_ads"/>
+                        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                            android:id="@+id/indicator"
+
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_height="wrap_content"
+                            app:dampingRatio="0.5"
+                            app:dotsColor="@color/white"
+
+                            app:dotsStrokeColor="@color/grey"
+                            android:layout_centerHorizontal="true"
+                            app:dotsCornerRadius="1dp"
+                            app:dotsSize="8dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:dotsSpacing="3dp"
+                            app:dotsStrokeWidth="0.5dp"
+                            app:stiffness="300" />
+
+                        <ImageView
+                            android:layout_marginTop="@dimen/_2sdp"
+
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/ic_iconfinder_shopping_cart_216477"
+                            android:id="@+id/activity_home_iv_cart"/>
+                        <ImageView
+                            android:layout_marginTop="@dimen/_2sdp"
+
+                            android:layout_width="@dimen/_20sdp"
+                            android:id="@+id/activity_home_iv_search"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_toRightOf="@id/activity_home_iv_cart"
+                            android:src="@drawable/ic_iconfinder_search_322497"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+                </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/activity_home_rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/category_item"
+
+        android:id="@+id/activity_home_rv_categories"/>
+
+
+
+</RelativeLayout>
